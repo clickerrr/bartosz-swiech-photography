@@ -1,2 +1,0 @@
-# clickerrr.github.io
-# Hello
