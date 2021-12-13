@@ -134,23 +134,23 @@ html, body {
 @keyframes zoomIn {
     
     from{
-        width: auto;
+        max-width: 0%;
         max-height: 0%;
     }
     to{
-        width: auto;
+        max-width: 80%;
         max-height: 80%;
     }
 }
 
 @keyframes zoomOut {
     from {
-        width: auto;
+        max-width: 80%;
         max-height: 80%;
     }
     to
     {
-        width: auto;
+        max-width: 0%;
         max-height: 0%;
     }
 }
