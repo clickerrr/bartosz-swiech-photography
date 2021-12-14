@@ -24,12 +24,12 @@ html, body {
     
 }
 
-.footer {
+.notice {
     display: flex;
     justify-content: center;
     
 }
-.footer div {
+.notice div {
     width: 90vw;
     border-top: 1px solid;
     text-align: center;
@@ -162,3 +162,31 @@ html, body {
     object-position: center;
 }
 
+.bottomBar {
+    width: 100%;
+    display: flex;
+    background-color: #1b1a1b;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+.bottomBar div {
+    margin: 20px;
+    margin-right: 10px;
+}
+
+.bottomBar a {
+    
+    display: inline-flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: white
+    
+  }
+  
+.item img {
+    width: 20px;
+    margin: 5px;
+  }
