@@ -1,4 +1,4 @@
-const images = Array.from(document.querySelectorAll("img"));
+const images = Array.from(document.querySelectorAll(".displayImage"));
 const gifs = Array.from(document.querySelectorAll(".gif"));
 const modal = document.querySelector(".modal");
 const modalImg = document.querySelector(".modal-img");
