@@ -12,6 +12,8 @@ html, body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     overflow-x: hidden;
+    width: 100%;
+    height: 100%;
 }
 .header {
     display: flex;
@@ -28,8 +30,8 @@ html, body {
 .notice {
     display: flex;
     justify-content: center;
-    
 }
+
 .notice div {
     width: 90vw;
     border-top: 1px solid;
@@ -61,12 +63,12 @@ html, body {
     display: none; /* Hidden by default */
     justify-content: center;
     align-items: center;
-    position: fixed; /* Stay in place */
+    position: absolute; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
     top: 0;
-    width: 100vw;
-    height: 100vh; 
+    width: 100%;
+    height: 100%; 
     overflow: auto;
     background-color: #36353788; 
     
@@ -91,24 +93,24 @@ html, body {
 
 @keyframes scale0 {
     from {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
     }
     to {
-        height: 0vh;
-        width: 0vw;
+        height: 0%;
+        width: 0%;
     }
 
 }
 
 @keyframes scale1 {
     from {
-        height: 0vh;
-        width: 0vw;
+        height: 0%;
+        width: 0%;
     }
     to {
-        height: 100vh;
-        width: 100vw;
+        height: 100%;
+        width: 100%;
     }
 }
 
