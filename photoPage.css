@@ -11,6 +11,7 @@ html, body {
     background-color: #363537;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    overflow-x: hidden;
 }
 .header {
     display: flex;
