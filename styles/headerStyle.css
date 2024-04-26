@@ -34,12 +34,20 @@ MINT HEX: #8CD867
 }
 
 .dropdown-contents {
-    top: 25px;
+    top: 35px;
     display: none;
     background-color: #1b1a1b;
     width: 200%;
     position: absolute;
     border: 1px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    box-shadow: 8px 5px 10px #00000093;
+    z-index: 1;
+
+    animation: growDown 250ms ease-in;
+    transform-origin: top;
 }
 
 .dropdown-contents div {
@@ -70,19 +78,71 @@ MINT HEX: #8CD867
 .show-dropdown {
     display: flex;
     flex-direction: column;
+}    
+
+.label-clicked {
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.border-transparent {
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+}
+
+.flip-icon {
+    transform: rotate(180deg);
 }
 
 #dropdown-label {
+    background-color: #1b1a1b;
+    z-index: 3;
     display: flex;
     align-items: center;
+    position: relative;
+    padding: 5px;
 }
 
 #dropdown-icon {
     width: 25px;
     height: 25px;
     filter: invert(100%);
+    
+    transition: 250ms ease-in;
 }
 
+@keyframes growDown {
+    0% {
+        top: 30px;
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.01)
+    }
+    100% {
+        
+        top: 35px;
+        transform: scaleY(1)
+    }
+}
+
+@keyframes growUp {
+    0% {
+        top: 35px;
+        transform: scaleY(1)
+    }
+    20% {
+        transform: scaleY(1.01)
+    }
+    100% {
+        top: 30px;
+        transform: scaleY(0)
+    }
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
@@ -98,6 +158,22 @@ MINT HEX: #8CD867
 
     .dropdown-contents {
         left: -50%;
+    }
+
+    .label-clicked {
+        border-top: 1px solid white;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .dropdown-contents {
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        border-top: 1px solid white;
+        border-bottom: 0;
+        border-radius: 5px;
     }
 }
 
@@ -140,6 +216,14 @@ MINT HEX: #8CD867
 
     .dropdown-contents {
         left: 0;
+    }
+
+    .label-clicked {
+        border-top: 1px solid white;
+        /* border-right: 1px solid white; */
+        border-left: 1px solid white;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
 }
 
