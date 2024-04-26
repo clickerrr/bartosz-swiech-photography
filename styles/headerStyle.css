@@ -95,6 +95,10 @@ MINT HEX: #8CD867
         padding: 10px;
         flex-direction: column;
     }
+
+    .dropdown-contents {
+        left: -50%;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -108,6 +112,7 @@ MINT HEX: #8CD867
         padding: 10px;
         flex-direction: column;
     }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -131,6 +136,10 @@ MINT HEX: #8CD867
 
     .header-element {
         flex-direction: row;
+    }
+
+    .dropdown-contents {
+        left: 0;
     }
 }
 
