@@ -1,8 +1,6 @@
 function handleDropdown() {
     console.log("Handling dropdown");
     document.getElementById("dropdown").classList.toggle("show-dropdown");
-    
-    
     document.getElementById("dropdown-label").classList.toggle("border-transparent");
     document.getElementById("dropdown-label").classList.toggle("label-clicked");
     document.getElementById("dropdown-icon").classList.toggle("flip-icon");
@@ -31,5 +29,4 @@ window.onclick = function(event) {
         
       }
     }
-
-  }
+}
