@@ -2,10 +2,28 @@
 .section-title {
     display: flex;
     justify-content: center;
+    align-items: center;
     border-bottom: 1px solid;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
+}
+
+#plug-link {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: .2em;
+    font-weight: bold;
+    transition: 250ms ease-in-out;
+}
+
+#plug-link:hover {
+    transform: scale(1.01);
+    color: #8d8a90;
+    text-shadow: 5px 0px 5px black;
 }
 
 .notice {
