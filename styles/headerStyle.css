@@ -21,6 +21,11 @@ MINT HEX: #8CD867
     justify-content: space-evenly;
     margin-left: 5px;
     margin-right: 5px;
+    transition: 250ms ease-in-out;
+}
+
+.header-element:hover {
+    transform: scale(1.05);
 }
 
 .header-element * {
@@ -34,6 +39,7 @@ MINT HEX: #8CD867
 
 .dropdown-container {
     position: relative;
+    transition: 250ms ease-in-out;
 }
 
 .dropdown-contents {
