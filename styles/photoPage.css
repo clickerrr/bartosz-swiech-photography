@@ -98,6 +98,43 @@
     animation: zoomOut .3s forwards ease-in-out; 
 }
 
+.aboutme-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.aboutme-container p {
+    font-size: 1.2em;
+    width: 50%;
+}
+
+.aboutme-container a {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 250ms ease-in-out
+}
+
+.aboutme-container a:hover {
+    transform: scale(1.05);
+    color: black;
+    background-color: white;
+}
+
 #scrollButton {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
