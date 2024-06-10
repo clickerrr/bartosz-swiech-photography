@@ -19,7 +19,7 @@ images.forEach(element => {
         
         modal.classList.add("fadeIn");
         modalImg.classList.add("zoomIn");
-
+        body.style.overflow = "hidden";
     });   
 });
 
@@ -30,5 +30,6 @@ modal.addEventListener("click", e => {
    
    modal.classList.add("fadeOut");
    modalImg.classList.add("zoomOut");
-    
+   body.style.removeProperty("overflow")
+   
 });

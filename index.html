@@ -31,19 +31,22 @@
             <a onclick="scrollToElement('favorites-title')">Favorites</a>
           </div>
           <div class="dropdown-item">
-            <a onclick="scrollToElement('sedona-2024-title')">Sedona 2024</a>
+            <a onclick="redirectToPage('/pages/sedona_trip.html')">Sedona 2024</a>
           </div>
           <div class="dropdown-item">
-            <a onclick="scrollToElement('phoenix-zoo-2024-title')">Phoenix Zoo 2024</a>
+            <a onclick="redirectToPage('/pages/phxzoo.html')">Phoenix Zoo 2024</a>
           </div>
           <div class="dropdown-item">
-            <a onclick="scrollToElement('cali-2021-title')">California 2021</a>
+            <a onclick="redirectToPage('/pages/calitrip.html')">California 2021</a>
           </div>
           <div class="dropdown-item">
-            <a onclick="scrollToElement('jasper-car-title')">Jasper Car Shoot</a>
+            <a onclick="redirectToPage('/pages/jaspershoot.html')">Jasper Car Shoot</a>
           </div>
           <div class="dropdown-item">
-            <a onclick="scrollToElement('brody-golfing-title')">Brody Golfing Shoot</a>
+            <a onclick="redirectToPage('/pages/brodyshoot.html')">Brody Golfing Shoot</a>
+          </div>
+          <div class="dropdown-item">
+            <a onclick="redirectToPage('/pages/feedconcert.html')">Feed Concert Shoot</a>
           </div>
         </div>
       </div>
@@ -54,6 +57,31 @@
       <a href="./pages/contact.html">Contact</a>
     </div>
     
+  </div>
+
+  <div class="catalog-title">
+    <h1 class="">Catalog</h1>
+  </div>
+
+  <div class="catalog-container">
+    <div onclick="redirectToPage('/pages/sedona_trip.html')" id="sedona-catalog" class="catalog-entry">
+      <span class="catalog-text">April 2024 Sedona Trip</span>
+    </div>
+    <div onclick="redirectToPage('/pages/phxzoo.html')" id="phxzoo-catalog" class="catalog-entry">
+      <span class="catalog-text">March 2024 Phoenix Zoo</span>
+    </div>
+    <div onclick="redirectToPage('/pages/calitrip.html')" id="calitrip-catalog" class="catalog-entry">
+      <span class="catalog-text">Summer 2021 California Trip</span>
+    </div>
+    <div onclick="redirectToPage('/pages/jaspershoot.html')" id="jasper-catalog" class="catalog-entry">
+      <span class="catalog-text">Jasper E34 Shoot</span>
+    </div>
+    <div onclick="redirectToPage('/pages/brodyshoot.html')" id="brody-catalog" class="catalog-entry">
+      <span class="catalog-text">Brody Golfing Shoot</span>
+    </div>
+    <div onclick="redirectToPage('/pages/feedconcert.html')" id="feed-catalog" class="catalog-entry">
+      <span class="catalog-text">Feed Concert Shoot</span>
+    </div>
   </div>
 
   <div id="favorites-title" class="section-title">
@@ -79,173 +107,6 @@
       <img class="displayImage" src="images/favorites/14.jpg">
       <img class="displayImage" src="images/favorites/8.jpg">
       <img class="displayImage" src="images/favorites/17.jpg">
-    </div>
-  </div>
-
-  <div id="sedona-2024-title" class="section-title">
-    <h1>April 2024 Sedona Trip</h1>
-  </div>
-
-  <div id="sedona-2024" class="container">
-    
-    <!-- Verticals -->
-    <div class="images">
-      <img class="displayImage" src="images/sedona_trip/sedona (12).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (7).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (8).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (10).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (18).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (20).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (27).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (40).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (43).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (22).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (28).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (32).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (46).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (5).jpg">
-    </div>
-
-     <!-- Horizontals -->
-    <div class="images">
-      <img class="displayImage" src="images/sedona_trip/sedona (3).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (24).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (31).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (34).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (38).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (42).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (44).jpg">
-      <img class="displayImage" src="images/sedona_trip/sedona (45).jpg">
-    </div>
-  </div>
-
-  <div id="phoenix-zoo-2024-title" class="section-title">
-    <h1>March 2024 Phoenix Zoo</h1>
-  </div>
-
-  <div id="phoenix-zoo-2024" class="container">
-    
-    <!-- Verticals -->
-    <div class="images">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_2388-2.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4250.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4335.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4362.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4670.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4605.jpg">
-    </div>
-
-    <!-- Horizontals -->
-    <div class="images">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_2243.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4152.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4019.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_3019.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_4433.jpg">
-      <img class="displayImage" src="images/phoenix_zoo/25perIMG_3184.jpg">
-    </div>
-  </div>
-
-  <div id="cali-2021-title" class="section-title">
-    <h1>California Trip | Summer 2021</h1>
-  </div>
-
-  <div id="cali-2021" class="container">
-    <!-- Verticals -->
-    <div class="images">
-      <img class="displayImage" src="images/california_trip/36.jpg">
-      <img class="displayImage" src="images/california_trip/50.jpg">
-      <img class="displayImage" src="images/california_trip/37.jpg">
-      <img class="displayImage" src="images/california_trip/40.jpg">
-      <img class="displayImage" src="images/california_trip/34.jpg">
-      <img class="displayImage" src="images/california_trip/52.jpg">
-      <img class="displayImage" src="images/california_trip/57.jpg">
-      <img class="displayImage" src="images/california_trip/65.jpg">
-      <img class="displayImage" src="images/california_trip/62.jpg">
-      <img class="displayImage" src="images/california_trip/42.jpg">
-      <img class="displayImage" src="images/california_trip/27.jpg">
-      <img class="displayImage" src="images/california_trip/28.jpg">
-      <img class="displayImage" src="images/california_trip/30.jpg">
-      <img class="displayImage" src="images/california_trip/44.jpg">
-      <img class="displayImage" src="images/california_trip/46.jpg">
-      <img class="displayImage" src="images/california_trip/51.jpg">
-      <img class="displayImage" src="images/california_trip/54.jpg">
-      <img class="displayImage" src="images/california_trip/63.jpg">
-      <img class="displayImage" src="images/california_trip/64.jpg">
-      <img class="displayImage" src="images/california_trip/55.jpg">
-      <img class="displayImage" src="images/california_trip/23.jpg">
-    </div>
-
-    <!-- Horizontals -->
-    <div class="images">
-      <img class="displayImage" src="images/california_trip/18.jpg">
-      <img class="displayImage" src="images/california_trip/19.jpg">
-      <img class="displayImage" src="images/california_trip/20.jpg">
-      <img class="displayImage" src="images/california_trip/21.jpg">
-      <img class="displayImage" src="images/california_trip/22.jpg">
-      <img class="displayImage" src="images/california_trip/24.jpg">
-      <img class="displayImage" src="images/california_trip/25.jpg">
-      <img class="displayImage" src="images/california_trip/32.jpg">
-      <img class="displayImage" src="images/california_trip/49.jpg">
-    </div>
-
-  </div>
-
-  <div id="jasper-car-title" class="section-title">
-    <a id="plug-link" target="_blank" href="https://www.instagram.com/jgusty/">Jasper</a>
-    <h1>Car Shoot</h1>
-  </div>
-
-  <div class="container">
-    
-    <!-- Verticals -->
-    <div class="images">
-      <img class="displayImage" src="images/jasper_carshoot/25perIMG_7586.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_7813-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_7838-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/25perIMG_7906.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_7885-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_7962-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_7959-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/25perIMG_8325.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/25perIMG_8332-2.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_8165-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_8284-25per.jpg">
-    </div>
-
-     <!-- Horizontals -->
-    <div class="images">
-      <img class="displayImage" src="images/jasper_carshoot/25perIMG_7674.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/25perIMG_7728.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_8141-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_8184-25per.jpg">
-      <img class="displayImage" src="images/jasper_carshoot/IMG_7693-25per.jpg">
-    </div>
-  </div>
-
-
-  <div id="brody-golfing-title" class="section-title">
-    <a id="plug-link" target="_blank" href="https://www.instagram.com/brody_ru/">Brody</a>
-    <h1>Golfing Shoot</h1>
-  </div>
-
-  <div class="container">
-    
-    <!-- Verticals -->
-    <div class="images">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5469.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5478.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5489.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5658.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5577.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5427.jpg">
-    </div>
-
-     <!-- Horizontals -->
-    <div class="images">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5631.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5632.jpg">
-      <img class="displayImage" src="images/brody_ruane_golf/25perIMG_5635.jpg">
     </div>
   </div>
 
@@ -280,7 +141,7 @@
 
   <div class="bottomBar">
     
-    <a class="item" target="_blank" href="https://www.instagram.com/bartek.s_wiech/">
+    <a class="item" target="_blank" href="https://www.instagram.com/barteksphoto/">
       <img src="assets/instagram.png">
       <span>Instagram</span>
     </a>
@@ -306,5 +167,6 @@
   <script src="scripts/dropdown.js"></script>
   <script src="scripts/scrollToTop.js"></script>
   <script src="scripts/scrollToElement.js"></script>
+  <script src="scripts/catalogPage.js"></script>
 </body>
 </html>
