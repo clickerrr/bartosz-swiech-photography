@@ -1,0 +1,21 @@
+.container {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 1000px;
+	height: auto;
+}
+
+.catalog-title {
+	width: 50%;
+	border: 1px solid;
+	border-color: transparent transparent white transparent;
+}
+
+.spinner-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,41 @@
+.section-title {
+	display: flex;
+
+	align-items: center;
+	flex-direction: column;
+	margin-top: 10px;
+	margin: auto;
+	text-align: center;
+	width: 50%;
+	border: 1px solid;
+	border-color: transparent transparent white transparent;
+}
+
+.contact-container {
+	margin-top: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
+.images {
+	max-width: 95%;
+	width: 95%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.images img {
+	margin: 5px;
+	width: auto;
+	height: 500px;
+	object-fit: contain;
+	object-position: center;
+	transition: 0.3s ease-in-out;
+	max-width: inherit;
+	max-height: inherit;
+}

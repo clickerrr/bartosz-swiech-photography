@@ -1,0 +1,17 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #363537;
+	color: white;
+	scroll-behavior: smooth;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
