@@ -69,8 +69,6 @@ const PhotoCatalogContainer = ({ imagesDirectory }: PhotoCatalogContainerProps) 
 
 	return (
 		<>
-			<div className="photo-container">{renderImageList()}</div>
-
 			{isLoading ? (
 				<div className="spinner-container">
 					<Spinner textToDisplay={'Loading Images... This may take a minute.'} />
@@ -78,6 +76,7 @@ const PhotoCatalogContainer = ({ imagesDirectory }: PhotoCatalogContainerProps) 
 			) : (
 				<></>
 			)}
+			<div className="photo-container">{renderImageList()}</div>
 
 			<div
 				className="modal"
