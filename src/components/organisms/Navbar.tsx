@@ -64,12 +64,24 @@ const Navbar = () => {
 			</div>
 
 			<div className="header-element">
-				<NavLink to="/" className={({ isActive }) => (isActive ? 'active' : '')}>
+				<NavLink
+					onClick={() => {
+						dropDownShowing ? handleDropdown() : null;
+					}}
+					to="/"
+					className={({ isActive }) => (isActive ? 'active' : '')}
+				>
 					Home
 				</NavLink>
 			</div>
 			<div className="header-element">
-				<NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
+				<NavLink
+					onClick={() => {
+						dropDownShowing ? handleDropdown() : null;
+					}}
+					to="/contact"
+					className={({ isActive }) => (isActive ? 'active' : '')}
+				>
 					Contact
 				</NavLink>
 			</div>
