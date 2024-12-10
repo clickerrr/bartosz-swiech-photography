@@ -7,6 +7,7 @@ import PhotoPage from './components/views/PhotoPage';
 import Footer from './components/organisms/Footer';
 import Navbar from './components/organisms/Navbar';
 import { CatalogObject } from './components/organisms/CatalogItem';
+import Error from './components/views/Error';
 export const DirectoriesContext = createContext<string[] | null>(null);
 export const CatalogItemContext = createContext<CatalogObject[] | null>(null);
 
@@ -84,7 +85,7 @@ const App = () => {
 								/>
 							);
 						})}
-						<Route path="*" element={<p>Error</p>} />
+						<Route path="*" element={<Error message="" />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
