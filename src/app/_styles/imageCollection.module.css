@@ -1,0 +1,26 @@
+.collection {
+    width: 90%;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.collectionHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.collectionImages {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.collectionImage {
+    margin: 10px;
+    width: auto;
+    height: 600px;
+}

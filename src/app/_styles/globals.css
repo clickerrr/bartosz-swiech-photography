@@ -1,0 +1,19 @@
+html,
+body {
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    height: 100%;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button {
+    background-color: red;
+    border-radius: 50px;
+}

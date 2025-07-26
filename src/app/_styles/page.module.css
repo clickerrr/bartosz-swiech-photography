@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.sectionSeparator {
+    margin-top: 1%;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 80%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.sectionHeader {
+}
+.sectionContents {
+    display: flex;
+    justify-content: center;
+}
