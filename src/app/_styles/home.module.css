@@ -36,11 +36,11 @@
 
 .introductionSection {
     margin-top: 25vh;
-    width: 60%;
     margin-bottom: 15vh;
+    width: 60%;
     border: 2px solid var(--snow);
     border-radius: 10px;
-    min-height: 50vh;
+    height: 80vh;
     padding: 1%;
     display: flex;
     align-items: center;
@@ -51,7 +51,7 @@
     margin-bottom: 2%;
 }
 .introductionSectionContents {
-    height: 100%;
+    height: 90%;
     border-radius: 10px;
     background-color: var(--snow);
     display: flex;
@@ -183,17 +183,13 @@
     width: 0;
 }
 
-.collectionSeparatorText {
-    font-style: italic;
-    margin: 0px auto 15vh auto;
-}
-
 .collectionSeparator {
     display: flex;
     flex-direction: column;
     width: 100%;
     background-color: var(--snow);
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .heroText {
@@ -201,6 +197,7 @@
     }
     .introductionSection {
         width: 90%;
+        height: 100vh;
         flex-direction: column;
     }
     .introductionSectionContents {

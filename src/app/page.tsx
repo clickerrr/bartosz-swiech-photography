@@ -28,10 +28,10 @@ const Home = () => {
                             to finish!
                         </p>
                         <BookNow />
+                        <h4>Take a look at some of my work below!</h4>
                     </div>
                 </div>
 
-                <h4 className={`${homeStyles.collectionSeparatorText}`}>Take a look at some of my work below!</h4>
                 <ImageCollectionContainer />
             </main>
         </div>
