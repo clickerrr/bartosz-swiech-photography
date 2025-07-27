@@ -1,6 +1,7 @@
 import styles from '@/app/_styles/navbar.module.css';
 import { ExternalLink } from 'lucide-react';
 import Link from 'next/link';
+import BookNow from '../BookNow';
 
 const Navbar = () => {
     return (
@@ -23,6 +24,8 @@ const Navbar = () => {
                     Contact
                     <ExternalLink className={`${styles.externalLinkIcon}`} />
                 </Link>
+
+                <BookNow />
             </div>
         </nav>
     );

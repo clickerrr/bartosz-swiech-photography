@@ -24,6 +24,8 @@ const ImageCollection = ({ collectionHeader, images }: ImageCollectionProps) => 
                             width={500}
                             height={500}
                             alt="Image"
+                            blurDataURL={imagePath}
+                            placeholder={'blur'}
                         />
                     );
                 })}

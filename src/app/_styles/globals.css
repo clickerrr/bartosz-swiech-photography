@@ -4,6 +4,7 @@ body {
     margin: 0px;
     font-size: 16px;
     height: 100%;
+    width: 100%;
     /* CSS HEX */
     --night: #131313ff;
     --snow: #fffbf8ff;
