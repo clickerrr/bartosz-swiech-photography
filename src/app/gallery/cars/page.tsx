@@ -4,6 +4,7 @@ import style from '@/app/_styles/page.module.css';
 import fs from 'fs';
 import path from 'path';
 import ImageCollection from '@/app/_components/ImageCollection';
+import PageHeader from '@/app/_components/PageHeader';
 
 const carGalleryPath = 'gallery/cars';
 const carDir = path.resolve('./public', carGalleryPath);
@@ -14,11 +15,7 @@ const Cars = () => {
     return (
         <div>
             <main className={`${style.main}`}>
-                <Link className={`${style.iconText}`} href={'/gallery'}>
-                    <MoveLeft color="white" />
-                    <span>Back</span>
-                </Link>
-                <h1 className={`${style.sectionHeaderText}`}>Cars</h1>
+                <PageHeader title={'Cars'} />
                 <div className={`${style.collectionContainer}`}>
                     <ImageCollection images={carImages} />
                 </div>

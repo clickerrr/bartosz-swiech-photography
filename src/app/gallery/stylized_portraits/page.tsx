@@ -4,6 +4,9 @@ import { MoveLeft } from 'lucide-react';
 import Link from 'next/link';
 import path from 'path';
 import fs from 'fs';
+import PageHeader from '@/app/_components/PageHeader';
+import { Suspense } from 'react';
+import Loading from './loading';
 
 const stylizedPortraitsPath = 'gallery/stylized_portraits';
 const stylizedPortraitsDir = path.resolve('./public', stylizedPortraitsPath);
@@ -13,11 +16,7 @@ const StylizedPortraits = () => {
     return (
         <div>
             <main className={`${style.main}`}>
-                <Link className={`${style.iconText}`} href={'/gallery'}>
-                    <MoveLeft color="white" />
-                    <span>Back</span>
-                </Link>
-                <h1 className={`${style.sectionHeaderText}`}>Stylized Portraits</h1>
+                <PageHeader title={'Stylized Portraits'} />
                 <div className={`${style.collectionContainer}`}>
                     <ImageCollection images={stylizedPortraitsImages} />
                 </div>

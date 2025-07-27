@@ -4,6 +4,7 @@ import ImageCollection from '@/app/_components/ImageCollection';
 import { MoveLeft } from 'lucide-react';
 import path from 'path';
 import fs from 'fs';
+import PageHeader from '@/app/_components/PageHeader';
 
 const portraitsPath = 'gallery/portraits';
 const portraitsDir = path.resolve('./public', portraitsPath);
@@ -13,11 +14,7 @@ const Portraits = () => {
     return (
         <div>
             <main className={`${style.main}`}>
-                <Link className={`${style.iconText}`} href={'/gallery'}>
-                    <MoveLeft color="white" />
-                    <span>Back</span>
-                </Link>
-                <h1 className={`${style.sectionHeaderText}`}>Portraits</h1>
+                <PageHeader title={'Portraits'} />
                 <div className={`${style.collectionContainer}`}>
                     <ImageCollection images={portraitsImages} />
                 </div>

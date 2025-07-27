@@ -4,6 +4,7 @@ import fs from 'fs';
 import Link from 'next/link';
 import { MoveLeft } from 'lucide-react';
 import ImageCollection from '@/app/_components/ImageCollection';
+import PageHeader from '@/app/_components/PageHeader';
 const natureWildlifePath = 'gallery/nature_wildlife';
 const natureWildlifeDir = path.resolve('./public', natureWildlifePath);
 const natureWildlifeFilenames = fs.readdirSync(natureWildlifeDir);
@@ -12,11 +13,7 @@ const NatureWildlife = () => {
     return (
         <div>
             <main className={`${style.main}`}>
-                <Link className={`${style.iconText}`} href={'/gallery'}>
-                    <MoveLeft color="white" />
-                    <span>Back</span>
-                </Link>
-                <h1 className={`${style.sectionHeaderText}`}>Nature and Wildlife</h1>
+                <PageHeader title={'Nature and Wildlife'} />
                 <div className={`${style.collectionContainer}`}>
                     <ImageCollection images={natureWildlifeImages} />
                 </div>
