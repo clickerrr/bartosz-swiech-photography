@@ -26,13 +26,20 @@
     background-position: center;
     width: 50%;
     height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .introductionSection {
-    height: 100vh;
+    margin-top: 25vh;
+    margin-bottom: 15vh;
+    border: 2px solid var(--snow);
+    border-radius: 10px;
+    height: 50vh;
     padding: 1%;
     display: flex;
     align-items: center;
+    color: black;
 }
 
 .introductionSectionHeader {
@@ -41,10 +48,13 @@
 }
 .introductionSectionContents {
     width: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--snow);
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 2%;
+    padding: 2% 5% 2% 5%;
 }
 .button {
     background-color: red;
@@ -61,7 +71,8 @@
     box-sizing: border-box;
     color: #fff;
     cursor: pointer;
-    display: inline-block;
+    display: flex;
+    align-items: center;
     float: right;
     font-weight: 700;
     letter-spacing: 0.05em;
@@ -145,7 +156,7 @@
 
 .fancy:hover {
     color: white;
-    background: black;
+    background: var(--orange);
 }
 
 .fancy:hover::before {
@@ -167,4 +178,16 @@
 .fancy:hover .bottomKey2 {
     right: 0;
     width: 0;
+}
+
+.collectionSeparatorText {
+    font-style: italic;
+    margin: 0px auto 15vh auto;
+}
+
+.collectionSeparator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--snow);
 }

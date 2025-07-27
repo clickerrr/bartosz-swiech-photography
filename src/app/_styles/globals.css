@@ -4,6 +4,14 @@ body {
     margin: 0px;
     font-size: 16px;
     height: 100%;
+    /* CSS HEX */
+    --night: #131313ff;
+    --snow: #fffbf8ff;
+    --orange: #e26d5cff;
+    --purple: #7272abff;
+    --blue: #2176ae;
+    background-color: var(--night);
+    color: white;
 }
 a,
 a:visited,
@@ -13,7 +21,8 @@ a:active {
     color: inherit;
 }
 
-.button {
-    background-color: red;
-    border-radius: 50px;
+h2,
+h3,
+h4 {
+    font-weight: unset;
 }

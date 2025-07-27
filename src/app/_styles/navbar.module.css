@@ -17,6 +17,18 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.externalLinkIcon {
+    margin-left: 5px;
+    margin-bottom: 2px;
+    width: auto;
+    height: 80%;
+    color: white;
+}
 .text {
     color: white;
 }

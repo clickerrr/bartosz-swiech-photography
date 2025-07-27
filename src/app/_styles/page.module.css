@@ -16,7 +16,25 @@
 }
 .sectionHeader {
 }
+.sectionHeaderText {
+    justify-self: center;
+    align-self: center;
+}
 .sectionContents {
     display: flex;
     justify-content: center;
+}
+.iconText {
+    margin-left: 1%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.iconText * {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.collectionContainer {
+    background-color: var(--snow);
 }
