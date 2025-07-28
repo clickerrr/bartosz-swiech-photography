@@ -7,12 +7,15 @@ import fs from 'fs';
 import PageHeader from '@/app/_components/PageHeader';
 import { Suspense } from 'react';
 import Loading from './loading';
+import readDirectory from '@/lib/readDirectory';
 
-const stylizedPortraitsPath = 'gallery/stylized_portraits';
-const stylizedPortraitsDir = path.resolve('./public', stylizedPortraitsPath);
-const stylizedPortraitsFilenames = fs.readdirSync(stylizedPortraitsDir);
-const stylizedPortraitsImages = stylizedPortraitsFilenames.map((name) => path.join('/', stylizedPortraitsPath, name));
-const StylizedPortraits = () => {
+const StylizedPortraits = async () => {
+    const stylizedPortraitsPath = 'gallery/stylized_portraits';
+    const stylizedPortraitsDir = path.resolve('./public', stylizedPortraitsPath);
+    const stylizedPortraitsFilenames = await readDirectory(stylizedPortraitsDir);
+    const stylizedPortraitsImages = stylizedPortraitsFilenames.map((name) =>
+        path.join('/', stylizedPortraitsPath, name)
+    );
     return (
         <div>
             <main className={`${style.main}`}>

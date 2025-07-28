@@ -4,12 +4,19 @@ import Link from 'next/link';
 import ImageCollectionContainer from './_components/ImageCollectionContainer';
 import { InstagramIcon } from 'lucide-react';
 import BookNow from './_components/BookNow';
+import { getImageProps } from 'next/image';
+import getBackgroundImage from '@/lib/getBackgroundImage';
 
 const Home = () => {
+    const {
+        props: { srcSet },
+    } = getImageProps({ alt: 'River flowing through a forest', width: 1920, height: 1080, src: '/hero-landing.jpg' });
+    const backgroundImage = getBackgroundImage(srcSet);
+    const backgroundStyle = { backgroundImage };
     return (
         <div>
             <main className={styles.main}>
-                <div className={`${homeStyles.heroLanding}`}>
+                <div className={`${homeStyles.heroLanding}`} style={backgroundStyle}>
                     <Link target="_blank" href="https://www.instagram.com/barteksphoto">
                         <InstagramIcon className={`${homeStyles.heroInstaIcon}`} />
                     </Link>

@@ -5,12 +5,13 @@ import { MoveLeft } from 'lucide-react';
 import path from 'path';
 import fs from 'fs';
 import PageHeader from '@/app/_components/PageHeader';
+import readDirectory from '@/lib/readDirectory';
 
-const portraitsPath = 'gallery/portraits';
-const portraitsDir = path.resolve('./public', portraitsPath);
-const portraitsFilenames = fs.readdirSync(portraitsDir);
-const portraitsImages = portraitsFilenames.map((name) => path.join('/', portraitsPath, name));
-const Portraits = () => {
+const Portraits = async () => {
+    const portraitsPath = 'gallery/portraits';
+    const portraitsDir = path.resolve('./public', portraitsPath);
+    const portraitsFilenames = await readDirectory(portraitsDir);
+    const portraitsImages = portraitsFilenames.map((name) => path.join('/', portraitsPath, name));
     return (
         <div>
             <main className={`${style.main}`}>

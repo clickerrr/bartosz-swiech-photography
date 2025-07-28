@@ -6,9 +6,9 @@ import BookNow from '../BookNow';
 const Navbar = () => {
     return (
         <nav className={styles.navbar}>
-            <div className={`${styles.container} ${styles.titleContainer}`}>
+            <Link href="/" className={`${styles.container} ${styles.titleContainer}`}>
                 <h1>Bartosz Swiech Photography</h1>
-            </div>
+            </Link>
             <div className={`${styles.container} ${styles.linksContainer}`}>
                 <Link className={`${styles.link}`} href="/">
                     Home

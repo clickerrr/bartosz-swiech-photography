@@ -5,13 +5,15 @@ import fs from 'fs';
 import path from 'path';
 import ImageCollection from '@/app/_components/ImageCollection';
 import PageHeader from '@/app/_components/PageHeader';
+import readDirectory from '@/lib/readDirectory';
+import { Suspense } from 'react';
 
-const carGalleryPath = 'gallery/cars';
-const carDir = path.resolve('./public', carGalleryPath);
-const carFilenames = fs.readdirSync(carDir);
+const Cars = async () => {
+    const carGalleryPath = 'gallery/cars';
+    const carDir = path.resolve('./public', carGalleryPath);
+    const carFilenames = await readDirectory(carDir);
 
-const carImages = carFilenames.map((name) => path.join('/', carGalleryPath, name));
-const Cars = () => {
+    const carImages = carFilenames.map((name) => path.join('/', carGalleryPath, name));
     return (
         <div>
             <main className={`${style.main}`}>

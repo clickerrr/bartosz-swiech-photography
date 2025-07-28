@@ -5,11 +5,12 @@ import Link from 'next/link';
 import { MoveLeft } from 'lucide-react';
 import ImageCollection from '@/app/_components/ImageCollection';
 import PageHeader from '@/app/_components/PageHeader';
-const natureWildlifePath = 'gallery/nature_wildlife';
-const natureWildlifeDir = path.resolve('./public', natureWildlifePath);
-const natureWildlifeFilenames = fs.readdirSync(natureWildlifeDir);
-const natureWildlifeImages = natureWildlifeFilenames.map((name) => path.join('/', natureWildlifePath, name));
-const NatureWildlife = () => {
+import readDirectory from '@/lib/readDirectory';
+const NatureWildlife = async () => {
+    const natureWildlifePath = 'gallery/nature_wildlife';
+    const natureWildlifeDir = path.resolve('./public', natureWildlifePath);
+    const natureWildlifeFilenames = await readDirectory(natureWildlifeDir);
+    const natureWildlifeImages = natureWildlifeFilenames.map((name) => path.join('/', natureWildlifePath, name));
     return (
         <div>
             <main className={`${style.main}`}>

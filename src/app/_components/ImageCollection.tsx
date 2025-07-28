@@ -1,10 +1,11 @@
+'use client';
 import style from '../_styles/imageCollection.module.css';
 import Image from 'next/image';
 interface ImageCollectionProps {
     collectionHeader?: string;
     images: string[];
 }
-const ImageCollection = ({ collectionHeader, images }: ImageCollectionProps) => {
+const ImageCollection = ({ collectionHeader, images, test }: ImageCollectionProps) => {
     return (
         <div className={`${style.collection}`}>
             {collectionHeader ? (
@@ -24,7 +25,7 @@ const ImageCollection = ({ collectionHeader, images }: ImageCollectionProps) => 
                             width={500}
                             height={500}
                             alt="Image"
-                            blurDataURL={imagePath}
+                            blurDataURL={'/blur-data.png'}
                             placeholder={'blur'}
                         />
                     );
