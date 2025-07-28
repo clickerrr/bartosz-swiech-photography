@@ -9,7 +9,7 @@
 
 .cardText {
     position: absolute;
-    filter: drop-shadow(5px 2px 5px black);
+    text-shadow: 2px 2px 5px black;
     font-weight: bold;
 }
 
