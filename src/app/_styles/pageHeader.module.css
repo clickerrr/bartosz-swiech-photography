@@ -1,34 +1,43 @@
-.main {
+.pageHeader {
     display: flex;
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    text-align: center;
 }
-.sectionSeparator {
-    margin-top: 1%;
-}
-.section {
+.pageHeader * {
     display: flex;
     justify-content: center;
-    align-self: center;
-    margin-top: 1%;
-    margin-bottom: 1%;
 }
-.sectionHeader {
-}
-.sectionHeaderText {
+.pageHeaderText {
     justify-self: center;
     align-self: center;
 }
-.sectionContents {
-    display: flex;
-    justify-content: center;
+.headerLeft {
+    justify-content: left;
+    width: 33%;
 }
-.collectionContainer {
-    display: flex;
-    justify-content: center;
-    background-color: var(--snow);
+.headerCenter {
+    width: 33%;
 }
-
+.headerRight {
+    justify-content: right;
+    width: 33%;
+}
+.iconText {
+    margin-left: 1%;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: left;
+}
+.iconText:hover {
+    cursor: pointer;
+}
+.iconText * {
+    padding-left: 5px;
+    padding-right: 5px;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .iconText {
