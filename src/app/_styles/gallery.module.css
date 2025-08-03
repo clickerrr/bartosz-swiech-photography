@@ -2,7 +2,7 @@
     align-self: center;
 }
 .galleryContainer {
-    height: 50vh;
+    min-height: 50vh;
     align-self: center;
     justify-self: center;
     width: 80%;
