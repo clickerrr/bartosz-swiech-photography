@@ -5,7 +5,7 @@ interface ImageCollectionProps {
     collectionHeader?: string;
     images: string[];
 }
-const ImageCollection = ({ collectionHeader, images, test }: ImageCollectionProps) => {
+const ImageCollection = ({ collectionHeader, images }: ImageCollectionProps) => {
     return (
         <div className={`${style.collection}`}>
             {collectionHeader ? (

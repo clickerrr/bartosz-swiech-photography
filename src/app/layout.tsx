@@ -1,7 +1,6 @@
 import Navbar from '@/app/_components/navbar/Navbar';
 import './_styles/globals.css';
 import localFont from 'next/font/local';
-import Head from 'next/head';
 
 const interFont = localFont({
     src: '../../public/Inter-4.1/InterVariable.ttf',

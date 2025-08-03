@@ -1,8 +1,5 @@
 import style from '@/app/_styles/page.module.css';
 import path from 'path';
-import fs from 'fs';
-import Link from 'next/link';
-import { MoveLeft } from 'lucide-react';
 import ImageCollection from '@/app/_components/ImageCollection';
 import PageHeader from '@/app/_components/PageHeader';
 import readDirectory from '@/lib/readDirectory';

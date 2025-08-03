@@ -1,12 +1,7 @@
 import style from '@/app/_styles/page.module.css';
 import ImageCollection from '@/app/_components/ImageCollection';
-import { MoveLeft } from 'lucide-react';
-import Link from 'next/link';
 import path from 'path';
-import fs from 'fs';
 import PageHeader from '@/app/_components/PageHeader';
-import { Suspense } from 'react';
-import Loading from './loading';
 import readDirectory from '@/lib/readDirectory';
 
 const StylizedPortraits = async () => {

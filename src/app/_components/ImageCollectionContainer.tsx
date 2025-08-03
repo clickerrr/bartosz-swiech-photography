@@ -24,7 +24,7 @@ const portraitsImages = portraitsFilenames.map((name) => path.join('/', portrait
 const stylizedPortraitsImages = stylizedPortraitsFilenames.map((name) => path.join('/', stylizedPortraitsPath, name));
 console.log(carImages, natureWildlifeImages, portraitsImages, stylizedPortraitsImages);
 
-const ImageCollectionContainer = ({ images }) => {
+const ImageCollectionContainer = () => {
     return (
         <div className={`${homeStyles.collectionSeparator}`}>
             <ImageCollection collectionHeader={'Portraits'} images={portraitsImages} />
@@ -35,20 +35,3 @@ const ImageCollectionContainer = ({ images }) => {
     );
 };
 export default ImageCollectionContainer;
-
-// This function gets called at build time
-export async function getStaticProps() {
-    console.log('getStaticProps');
-    // Call an external API endpoint to get posts
-    const res = await fetch('http://localhost:3000/api/test');
-    const images = await res.json();
-
-    console.log(res);
-    // By returning { props: { posts } }, the Blog component
-    // will receive `posts` as a prop at build time
-    return {
-        props: {
-            images,
-        },
-    };
-}
