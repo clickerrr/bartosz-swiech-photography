@@ -15,7 +15,8 @@ export default function RootLayout({
     return (
         <html lang="en" className={interFont.className}>
             <head>
-                <link rel="icon" href="/favicon.ico" sizes="any" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <link rel="icon" type="image/icon" href="/favicon.ico" sizes="any" />
                 <title>Bartek Swiech Photography</title>
             </head>
             <body>
