@@ -18,7 +18,7 @@ const Gallery = () => {
                     <Link href="/gallery/stylized_portraits">
                         <ImageCard
                             cardText={'Stylized Portraits'}
-                            imagePath="collection/stylized_portraits/stylized_portraits2.jpg"
+                            imagePath="/collection/stylized_portraits/stylized_portraits2.jpg"
                         />
                     </Link>
                     <Link href="/gallery/naturewildlife">
