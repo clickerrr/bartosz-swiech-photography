@@ -9,7 +9,7 @@ const ImageCard = ({ imagePath, cardText }: ImageCardProps) => {
     console.log('imagePath', imagePath);
     const {
         props: { srcSet },
-    } = getImageProps({ alt: '', width: 300, height: 300, src: `/${imagePath}` });
+    } = getImageProps({ alt: '', width: 300, height: 300, src: `${imagePath}` });
     const backgroundImage = getBackgroundImage(srcSet);
     const backgroundStyle = { backgroundImage };
     return (
