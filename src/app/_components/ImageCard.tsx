@@ -10,8 +10,13 @@ const ImageCard = ({ imagePath, cardText }: ImageCardProps) => {
     const {
         props: { srcSet },
     } = getImageProps({ alt: '', width: 300, height: 300, src: `/${imagePath}` });
+    const backgroundStyle = {
+        backgroundImage: `url(${imagePath})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    };
     const backgroundImage = getBackgroundImage(srcSet);
-    const backgroundStyle = { backgroundImage };
+    /*const backgroundStyle = { backgroundImage };*/
     return (
         <div className={`${style.card}`}>
             <div className={`${style.image}`} style={backgroundStyle}></div>
