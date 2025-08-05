@@ -6,12 +6,11 @@ interface ImageCardProps {
     cardText?: string;
 }
 const ImageCard = ({ imagePath, cardText }: ImageCardProps) => {
-    console.log('imagePath', imagePath);
     const {
         props: { srcSet },
     } = getImageProps({ alt: '', width: 300, height: 300, src: `/${imagePath}` });
     const backgroundStyle = {
-        backgroundImage: `url(${imagePath})`,
+        backgroundImage: `url(/${imagePath})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     };

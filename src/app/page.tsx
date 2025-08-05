@@ -11,8 +11,13 @@ const Home = () => {
     const {
         props: { srcSet },
     } = getImageProps({ alt: 'River flowing through a forest', width: 1920, height: 1080, src: '/hero-landing.jpg' });
-    const backgroundImage = getBackgroundImage(srcSet);
-    const backgroundStyle = { backgroundImage };
+    //const backgroundImage = getBackgroundImage(srcSet);
+    //const backgroundStyle = { backgroundImage };
+    const backgroundStyle = {
+        backgroundImage: `url(/hero-landing.jpg)`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+    };
     return (
         <div>
             <main className={styles.main}>
